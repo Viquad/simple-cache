@@ -55,19 +55,3 @@ func (c *memoryCache) Delete(key string) error {
 
 	return nil
 }
-
-/*
-func main() {
-	cache := NewMemoryCache()
-
-	cache.Set("userId", 42)
-	userId, err := cache.Get("userId")
-
-	fmt.Println(userId)
-
-	cache.Delete("userId")
-	userId := cache.Get("userId")
-
-	fmt.Println(userId)
-}
-*/
