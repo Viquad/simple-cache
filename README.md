@@ -14,7 +14,7 @@ import (
 func main() {
 	cache := simplecache.NewMemoryCache()
 
-	err := cache.Set("userId", 42)
+	err := cache.Set("userId", 42, 0)
 	if err != nil {
 		log.Println(err.Error())
 		return
