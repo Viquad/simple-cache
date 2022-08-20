@@ -8,11 +8,11 @@ package main
 import (
 	"log"
 
-	simplecache "github.com/Viquad/simple-cache"
+	cache "github.com/Viquad/simple-cache"
 )
 
 func main() {
-	cache := simplecache.NewMemoryCache()
+	cache := cache.NewMemoryCache()
 
 	err := cache.Set("userId", 42)
 	if err != nil {
